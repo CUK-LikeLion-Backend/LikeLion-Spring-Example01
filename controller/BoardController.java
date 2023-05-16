@@ -50,7 +50,11 @@ public class BoardController {
         return "";
     }
     
-    
+    //D : delete 기능
+    @GetMapping("/board/delete")
+    public String boardDelete(Integer id){
+        
+    }
 
 
 }
