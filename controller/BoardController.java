@@ -53,8 +53,27 @@ public class BoardController {
     //D : delete 기능
     @GetMapping("/board/delete")
     public String boardDelete(Integer id){
-        
+        return "";
     }
 
+    //U : 수정기능 - 수정 버튼 동작
+    //path variable 을 이용한 get 방식입니다.
+    @GetMapping("/board/modify/{id}")
+    public String boardModify(@PathVariable("id") Integer id,Model model)
+    {
+        return "";
+    }
+
+    //수정 반영
+    @PostMapping("/board/update/{id}")
+    public String boardUpdate(@PathVariable("id") Integer id,Board board){
+
+        /**
+        * board로 받아온 값을 get,set 을 이용해 새로 수정한 뒤에
+        * 리스트 페이지로 리 다이렉트 한 코드를 작성해주면 됩니다.
+        */
+
+        return "";
+    }
 
 }
