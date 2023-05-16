@@ -9,15 +9,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class BoardController {
     /**
      * 역슬래시 경로로 들어왔을때 helloworld 를 리턴합니다.
-     * @GetMapping("/")
+     * @GetMapping("/") GetMapping : 어떤 url 로 접근할 것인지 지정해주는 어노테이션
      *     @ResponseBody
      *     public String main(){
      *         return "Hello World";
      *     }
      *
      * */
-    //GetMapping : 어떤 url 로 접근할 것인지 지정해주는 어노테이션
-
+    
+    
     //localhost:8090/board/wirte 주소로 접속하면 board write 페이지 보여주는 설정
     @GetMapping("/board/write")
     public String boardwriteForm(){
@@ -34,4 +34,15 @@ public class BoardController {
          * */
         
     }
+    
+    
+    //R 기능 구현
+    @GetMapping("/board/list")
+    public String boardList(){
+        return "";
+    }
+    
+    
+
+
 }
