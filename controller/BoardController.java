@@ -36,9 +36,17 @@ public class BoardController {
     }
     
     
-    //R 기능 구현
+    //R : 리스트 기능 구현
     @GetMapping("/board/list")
-    public String boardList(){
+    public String boardList(Model model){
+        return "";
+    }
+     
+    //R : 상세페이지 기능 구현
+    @GetMapping("/board/view") //localhost:8090/board/view?id=1 하면, 1 이 id 값이된다. 
+    //이렇듯 값을 전달하는  path variable 과query parameter 방식에 대해서도 알아보시길 바랍니다.
+    public String boardView(Model model,Integer id){
+
         return "";
     }
     
