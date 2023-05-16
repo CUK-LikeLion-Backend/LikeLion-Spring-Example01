@@ -12,7 +12,7 @@ public class BoardService {
     private BoardRepository boardRepository;
 
     //게시글 작성 처리 
-    public void write(Board board){
+    public void boardwrite(Board board){
         //entity 에 저장하는 코드를 작성해주세요.
         //이렇게 작성한 서비스는 컨트롤러에서 이용됩니다. 
         //헷갈리신다면 MVC구조, 어노테이션 등에 대해 파악하고 풀어주시길 바랍니다. 
@@ -30,6 +30,14 @@ public class BoardService {
     public Board boardView(Integer id){
         
     }
+    
+        //특정 게시글 삭제
+    public void boardDelete(Integer id){
+        
+        //삭제 후 리스트 페이지로 리다이렉트 할 수 있게 return 해 주세요.
+    }
+    
+    
     
     
 }
