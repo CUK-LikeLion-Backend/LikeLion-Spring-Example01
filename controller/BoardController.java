@@ -26,7 +26,7 @@ public class BoardController {
 
     //boardwrite.html 에서의 요청이 넘어왔는지 확인하는 메소드
     @PostMapping("/board/writepro")
-    public String boardWritePro(String title, String content){
+    public String boardWritePro(Board board){ //html 에서지정한 이름대로 매개변수가 Board 클래스에 담겨서 들어옴
 
         //구현하시면됩니다.
         return "";
