@@ -2,8 +2,9 @@ package com.example.board.entity;
 
 import jakarta.persistence.Entity;
 
-//DB 에 있는 테이블을 의미하는 어노테이션
-@Entity
+
+@Entity //DB 에 있는 테이블을 의미하는 어노테이션
+@Data //get,set 메소드 이용가능하게 하는 어노테이션 
 public class Board {
     //테이블을 토대로 작성해주시면됩니다.
     
