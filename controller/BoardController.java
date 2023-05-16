@@ -29,6 +29,9 @@ public class BoardController {
     public String boardWritePro(Board board){ //html 에서지정한 이름대로 매개변수가 Board 클래스에 담겨서 들어옴
 
         //구현하시면됩니다.
+        /**
+         * 힌트 : 서비스에 작성한 코드를 이용하여 적절한 코드를 작성하세요
+         * */
         
     }
 }
